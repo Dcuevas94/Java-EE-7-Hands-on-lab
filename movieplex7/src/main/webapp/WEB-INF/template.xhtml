@@ -66,9 +66,12 @@
             <div id="left">
                 <ui:insert name="left">
                     <h:form>
-                        <h:commandLink action="item1">Item 1</h:commandLink>
+                        <h:commandLink action="booking">Book a movie</h:commandLink>
                         <p/>
-                        <h:outputLink value="item2.xhtml">Item 2</h:outputLink>
+                        <!--Renders an HTML anchor to the URI that identifies the web application-->
+                        <h:outputLink value= "${facesContext.externalContext.requestContextPath}/faces/chat/chatroom.xhtml">Chat Room</h:outputLink>
+                        <p/>
+                        <h:outputLink value="${facesContext.externalContext.requestContextPath}/faces/client/movies.xhtml">Movies</h:outputLink>
                     </h:form>
                 </ui:insert>
             </div>
